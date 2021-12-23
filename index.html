@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="app">
+
+        <!-- Left Section -->
+        <div class="leftSection">
+            <h1 class="city">Baku, AZ</h1>
+            <p class="weatherDesc">snow</p>
+            <div class="descImg"><img class="weatherImg" src="img/01n.svg" alt="descripton image"></div>
+            <h1 class="temp">10°C</h1>
+            <p class="tempFeel">Feels like 10°C</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="rightSection">
+
+            <!-- Header -->
+            <div class="header">
+                <div class="time">
+                    <h2 class="timeHeader">Wednesday, 9:41</h2>
+                </div>
+                <input type="text" id="searchBar" placeholder="Search a city...">
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+
+                <!-- Card Humidity -->
+                <div class="card">
+                    <p>Humidity</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/humidity.png" alt="humidity image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="humidityText">86</h1>
+                            <p>%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Wind speed -->
+                <div class="card">
+                    <p>Wind speed</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/wind.png" alt="wind speed image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="windspeedText">1.03</h1>
+                            <p>m/s</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Wind direction -->
+                <div class="card">
+                    <p>Wind direction</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/compass.png" alt="wind direction image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="winddirText">N</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Visiblity -->
+                <div class="card">
+                    <p>Visiblity</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/binocular.png" alt="visiblity image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="visiblityText">10.0</h1>
+                            <p class="visiblitySubtext">km</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Sunrise -->
+                <div class="card">
+                    <p>Sunrise</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/sunrise.png" alt="sun rise image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="sunriseText">8:00</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Sunset -->
+                <div class="card">
+                    <p>Sunset</p>
+                    <div class="cardContent">
+                        <div class="cardImg">
+                            <img src="img/sunset.png" alt="sunset image" width="100" height="100">
+                        </div>
+                        <div class="cardText">
+                            <h1 class="sunsetText">17:17</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Metric System</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

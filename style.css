@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: radial-gradient(circle 993px at .5% 50.5%, rgba(137, 171, 245, .37) 0, #f5f7fc 100.2%);
+}
+
+/* App */
+.app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    background-color: hsla(0, 0%, 100%, .95);
+    box-shadow: 0 8px 32px 0 rgb(83 89 179 / 37%);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.leftSection {
+    text-align: center;
+    padding: 30px;
+}
+
+.city {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+.weatherDesc {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.descImg {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.descImg img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.temp {
+    font-size: 8.4rem;
+}
+
+.tempFeel {
+    font-size: 1.6rem;
+}
+
+
+/* Right Section */
+.rightSection {
+    background-color: #f7f7f7;
+    padding: 3rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.time h2 {
+    font-size: 2.4rem;
+}
+
+#searchBar {
+    height: 4rem;
+    font-size: 1.8rem;
+    color: #303030;
+    text-align: right;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: hsla(0, 0%, 100%, .95);
+    padding: 2rem;
+    text-align: right;
+    border-radius: 2rem;
+}
+
+.card>p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.cardContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cardText h1 {
+    font-size: 3.2rem;
+}
+
+.cardText p {
+    font-size: 1.6rem;
+}
+
+/* Footer */
+.footer {
+    text-align: right;
+}
+
+.footer p {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: green;
+}
+
+@media only screen and (max-width: 1100px) {
+    .app {
+        width: 90%;
+    }
+
+    .app, .header {
+        grid-template-columns: 1fr;
+    }
+
+    #searchBar {
+        text-align: left;
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        text-align: left;
+    }
+
+    .cardContent {
+        grid-template-columns: 0fr 1fr;
+    }
+
+    .cardText {
+        text-align: right;
+        padding: 0 2rem;
+    }
+}
